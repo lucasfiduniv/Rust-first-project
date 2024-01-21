@@ -4,8 +4,9 @@ reversed
 }
 
 fn reverve(){
-let input_string = String::from("hello");
-let reversed_string1 = reversed_string(&input_string);
-println!("Original string {}", input_string);
-println!("Reverse string {}", reversed_string1);
+    let mut string = String::new();
+    println!("Digite uma string");
+    io::stdin().read_line(&mut string).expect("erro ao ler string");
+    let converted = reversed_string(&string);
+    println!("{}", converted);
 }
