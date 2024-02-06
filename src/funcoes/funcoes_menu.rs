@@ -1,24 +1,19 @@
-use std::io;
 
-include!("./aulas_iniciais/aulas_iniciais_menu.rs");
-include!("./funcoes/funcoes_menu.rs");
+include!("dobro.rs");
 
-fn main() {
+fn funcoes_menu(){
     println!("Escolha uma opção:");
-    println!("1. Funcoes Basicas");
-    println!("2. Funcoes");
+    println!("1. Dobro");
 
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Falha ao ler a entrada");
     let choice: u32 = input.trim().parse().expect("Entrada inválida");
 
     match choice {
-        1 => aulas_iniciais_menu(),
-        2 => funcoes_menu(),
+        1 => teste_dobro(),
         _ => println!("Opção inválida"),
     }
 
     println!("Pressione Enter para sair...");
     io::stdin().read_line(&mut input).expect("Falha ao ler a entrada");
 }
-
