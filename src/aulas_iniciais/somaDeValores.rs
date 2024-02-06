@@ -5,7 +5,7 @@ fn soma_valores(){
     let mut valor_i32 = converter_valores(&valor_entrada);
 
     while valor_i32 !=0{
-        let mut r = valor_i32 %10;
+        let r = valor_i32 %10;
         soma= soma+r;
         valor_i32 = valor_i32 / 10;
     }

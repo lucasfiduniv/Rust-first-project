@@ -1,10 +1,11 @@
 use std::io;
 
-include!("compararValores.rs");
-include!("converterDeInt.rs");
-include!("somaDeValores.rs");
-include!("fatorial_while.rs");
-include!("media_nota_alunos.rs");
+include!("./aulas_iniciais/compararValores.rs");
+include!("./aulas_iniciais/fatorial_while.rs");
+include!("./aulas_iniciais/converterDeInt.rs");
+include!("./aulas_iniciais/somaDeValores.rs");
+include!("./aulas_iniciais/media_nota_alunos.rs");
+
 fn main() {
     println!("Escolha uma opção:");
     println!("1. Comparar valores");
